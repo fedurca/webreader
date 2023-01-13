@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<title>Mazda mx5 bazar - Bazos.cz</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Bezplatná inzerce na internetu - vyhledávání inzerátů na Bazoš.cz.">
+<meta name="google-play-app" content="app-id=cz.ackee.bazos">
+<meta name="apple-itunes-app" content="app-id=1195042966">
+<meta property="fb:admins" content="1055875657">
+<meta property="og:image" content="https://www.bazos.cz/obrazky/bazoslogoface.png">
+<meta name="ROBOTS" content="NOINDEX">
+<link rel="stylesheet" href="https://www.bazos.cz/bazos61s.css" type="text/css"><link rel="preload" as="image" href="https://www.bazos.cz/obrazky/bazos.svg">
+<link rel="shortcut icon" HREF="https://www.bazos.cz/favicon.ico">
+<link rel="icon" sizes="192x192" href="https://www.bazos.cz/obrazky/icon-192x192.png">
+<link rel="apple-touch-icon" href="https://www.bazos.cz/apple-touch-icon.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.bazos.cz/search.xml" title="Bazoš.cz">
+<link rel="alternate" type="application/rss+xml" title="Bazos.cz - RSS" href="https://www.bazos.cz/rss.php?humkreis=25&hledat=mazda+mx5&cenaod=10000">
+<script async="async" src="https://www.google.com/adsense/search/ads.js"></script>
+<script type="text/javascript" charset="utf-8">
+(function(g,o){g[o]=g[o]||function(){(g[o]['q']=g[o]['q']||[]).push(
+  arguments)},g[o]['t']=1*new Date})(window,'_googCsa');
+</script><script>
+var xhr = new XMLHttpRequest();
+var naseptavac_value = '';
+function naseptavac(value) {
+  if (value=='')  {
+  	naseptavac_value = '';
+  	document.getElementById('vysledek').innerHTML='';
+  	}
+else {
+	if (naseptavac_value == value) {
+		return false;
+	}
+	naseptavac_value = value;
+	setTimeout(function () {
+		if (naseptavac_value != value) {
+			return false;
+		}
+		xhr.onreadystatechange = function() {
+ 		 if (this.readyState == 4 && naseptavac_value == value){
+				document.getElementById('vysledek').innerHTML = this.responseText;
+			}
+ 		 };
+		xhr.open('GET', '/suggest.php?rubnas=HP&qnas='+encodeURIComponent(naseptavac_value));
+		xhr.send();
+	}, 250);
+}
+}
+
+var naseptavacpsc_value = '';
+function naseptavacpsc(value) {
+  if (value=='')  {
+  	naseptavacpsc_value = '';
+  	document.getElementById('vysledekpsc').innerHTML='<table cellpadding=\"3\" cellspacing=\"0\" class=\"tablenaspsc\"><tr><td class=\"act\" onclick=\"getLocation();\"><b>Inzeráty v okolí</b></td></tr></table>';
+  	}
+else {
+	if (naseptavacpsc_value == value) {
+		return false;
+	}
+	naseptavacpsc_value = value;
+	setTimeout(function () {
+		if (naseptavacpsc_value != value) {
+			return false;
+		}
+		xhr.onreadystatechange = function() {
+ 		 if (this.readyState == 4 && naseptavacpsc_value == value){
+				document.getElementById('vysledekpsc').innerHTML = this.responseText;
+			}
+ 		 };
+		xhr.open('GET', '/suggestpsc.php?qnaspsc='+encodeURIComponent(naseptavacpsc_value));
+		xhr.send();
+	}, 250);
+}
+}
+
+function getLocation() {
+if (navigator.geolocation) {navigator.geolocation.getCurrentPosition(showPosition);}
+else {document.getElementById('hlokalita').value = '';}
+}
+function showPosition(position) {
+		xhr.onreadystatechange = function() {
+ 		 if (this.readyState == 4){
+				document.getElementById('hlokalita').value = this.responseText;
+				document.forms['formt'].submit();
+			}
+ 		 };
+		xhr.open('GET', '/zip.php?latitude='+encodeURIComponent(position.coords.latitude)+'&longitude='+encodeURIComponent(position.coords.longitude));
+		xhr.send();
+}
+
+var agent_value = '';
+function agentclick() {
+  if (document.getElementById('agentmail').value=='')  {
+  	document.getElementById("agentmail").focus();
+    return false;
+  	}
+else {
+agent_value = document.getElementById('agentmail').value;
+xhr.onreadystatechange = function() {
+  if (this.readyState == 4){
+				document.getElementById('overlay').innerHTML = this.responseText;
+			}
+  };
+xhr.open("GET", '/agent.php?hledat=mazda mx5&rubrikav=&hlokalita=&humkreis=25&cenaod=10000&cenado=&cat=&typ=&agentmail='+encodeURIComponent(agent_value));
+xhr.send();
+}
+}
+
+function odeslatrequest(value) {
+xhr.onreadystatechange = function() {
+  if (this.readyState == 4){
+				document.getElementById('overlay').innerHTML = this.responseText;
+			}
+  };
+xhr.open("GET", value);
+xhr.send();
+}
+function overlay() {
+	el = document.getElementById("overlay");
+	el.style.display = (el.style.display == "inline") ? "none" : "inline";
+}
+</script>
+<script src="https://www.bazos.cz/eucookiecz.js" async></script>
+</head>
+
+<body>
+
+<div class="sirka">
+
+
+<div class="listalogor">
+<div class="listalogol"><a href="https://www.bazos.cz/" title="Bazos.cz - Inzerce, bazar"><img src="https://www.bazos.cz/obrazky/bazos.svg" width="199" height="34" alt="Bazos.cz - Inzerce, inzeráty"></a></div>
+<div class="listalogom"> <img src="/ukflag.jpg" height="25px" width="38px"> <b>... inzerce pro každého</b></div>
+<div class="listalogop"><a href="https://www.bazos.cz/oblibene.php"><b>Oblíbené inzeráty</b></a> <a href="https://www.bazos.cz/moje-inzeraty.php"><b>Moje inzeráty</b></a> <a href="/pridat-inzerat.php"><b><span class=pridati>Přidat inzerát</span></b></a></div>
+</div>
+
+<form name="formt" id="formt" method=get action="/search.php">
+<div class="listah">
+<div class="rubriky">
+<b>
+Co: <span class=vysokoli><span id="vysledek"></span><input type="search" onkeyup="naseptavac(this.value);" id=hledat name=hledat size="17" maxlength="256" value="mazda mx5" autocomplete="off" title="Co? Vyhledávaný výraz" ></span>
+
+<select name="rubriky" onchange='this.form.submit();' title="Vyber rubriku">
+<option value="www" selected>Všechny rubriky</option>
+<option value="auto">Auto</option>
+<option value="deti">Děti</option>
+<option value="dum">Dům a zahrada</option>
+<option value="elektro">Elektro</option>
+<option value="foto">Foto</option>
+<option value="hudba">Hudba</option>
+<option value="knihy">Knihy</option>
+<option value="mobil">Mobily</option>
+<option value="motorky">Motorky</option>
+<option value="nabytek">Nábytek</option>
+<option value="obleceni">Oblečení</option>
+<option value="pc">PC</option>
+<option value="prace">Práce</option>
+<option value="reality">Reality</option>
+<option value="sluzby">Služby</option>
+<option value="sport">Sport</option>
+<option value="stroje">Stroje</option>
+<option value="vstupenky">Vstupenky</option>
+<option value="zvirata">Zvířata</option>
+<option value="ostatni">Ostatní</option>
+</select>
+
+Lokalita: <span class=vysokolipsc><span id="vysledekpsc"></span><input type="search" name="hlokalita" id="hlokalita" onkeyup="naseptavacpsc(this.value);" onclick="naseptavacpsc(this.value);" value="" size="4" maxlength="25" autocomplete="off" title="Kde? PSČ (místo)" style="-webkit-appearance: none;"></span>
+Okolí: <input name="humkreis" title="Okolí v km" value="25" size="3" style="width: 25px;"> km
+Cena od: <input name=cenaod title="Cena od Kč" maxlength="12" size="5" value="10000"> - do: <input name=cenado title="Cena do Kč" maxlength="12" size="5" value=""> Kč <input type="submit" name="Submit" value="Hledat">
+<input type="hidden" name="kitx" value="ano"></b>
+</div>
+</div>
+</form>
+<div class="drobky"><a href="https://www.bazos.cz/" title="Inzerce Bazoš">Hlavní stránka</a> > <b>Vyhledávání</b> > <h1 class="nadpiskategorie">mazda mx5</h1></div><br>
+
+
+
+<div class="flexmain"><div class="menuleft"><div class="nadpismenu">Inzerce</div>
+<div class="barvalmenu">
+<div class="barvaleva">
+<div align="center">
+
+<br>
+<a href="https://auto.bazos.cz/"><b>Auto</b></a>
+Inzeráty Celkem: 335535<br>
+Za 24 hodin: 17401<br><br>
+
+<br>
+<a href="https://deti.bazos.cz/"><b>Děti</b></a>
+Inzeráty Celkem: 205571<br>
+Za 24 hodin: 4559<br><br>
+
+<br>
+<a href="https://dum.bazos.cz/"><b>Dům a zahrada</b></a>
+Inzeráty Celkem: 94664<br>
+Za 24 hodin: 3262<br><br>
+
+<br>
+<a href="https://elektro.bazos.cz/"><b>Elektro</b></a>
+Inzeráty Celkem: 70732<br>
+Za 24 hodin: 2507<br><br>
+
+<br>
+<a href="https://foto.bazos.cz/"><b>Foto</b></a>
+Inzeráty Celkem: 11787<br>
+Za 24 hodin: 402<br><br>
+
+<br>
+<a href="https://hudba.bazos.cz/"><b>Hudba</b></a>
+Inzeráty Celkem: 17462<br>
+Za 24 hodin: 593<br><br>
+
+<br>
+<a href="https://knihy.bazos.cz/"><b>Knihy</b></a>
+Inzeráty Celkem: 49932<br>
+Za 24 hodin: 946<br><br>
+
+<br>
+<a href="https://mobil.bazos.cz/"><b>Mobily</b></a>
+Inzeráty Celkem: 24810<br>
+Za 24 hodin: 1374<br><br>
+
+<br>
+<a href="https://motorky.bazos.cz/"><b>Motorky</b></a>
+Inzeráty Celkem: 52926<br>
+Za 24 hodin: 1996<br><br>
+
+<br>
+<a href="https://nabytek.bazos.cz/"><b>Nábytek</b></a>
+Inzeráty Celkem: 63526<br>
+Za 24 hodin: 2261<br><br>
+
+<br>
+<a href="https://obleceni.bazos.cz/"><b>Oblečení</b></a>
+Inzeráty Celkem: 129672<br>
+Za 24 hodin: 3001<br><br>
+
+<br>
+<a href="https://pc.bazos.cz/"><b>PC</b></a>
+Inzeráty Celkem: 49100<br>
+Za 24 hodin: 2061<br><br>
+
+<br>
+<a href="https://prace.bazos.cz/"><b>Práce</b></a>
+Inzeráty Celkem: 5957<br>
+Za 24 hodin: 708<br><br>
+
+<br>
+<a href="https://reality.bazos.cz/"><b>Reality</b></a>
+Inzeráty Celkem: 41637<br>
+Za 24 hodin: 2306<br><br>
+
+<br>
+<a href="https://sluzby.bazos.cz/"><b>Služby</b></a>
+Inzeráty Celkem: 9951<br>
+Za 24 hodin: 771<br><br>
+
+<br>
+<a href="https://sport.bazos.cz/"><b>Sport</b></a>
+Inzeráty Celkem: 89781<br>
+Za 24 hodin: 2591<br><br>
+
+<br>
+<a href="https://stroje.bazos.cz/"><b>Stroje</b></a>
+Inzeráty Celkem: 55894<br>
+Za 24 hodin: 2677<br><br>
+
+<br>
+<a href="https://vstupenky.bazos.cz/"><b>Vstupenky</b></a>
+Inzeráty Celkem: 2284<br>
+Za 24 hodin: 100<br><br>
+
+<br>
+<a href="https://zvirata.bazos.cz/"><b>Zvířata</b></a>
+Inzeráty Celkem: 39490<br>
+Za 24 hodin: 2018<br><br>
+
+<br>
+<a href="https://ostatni.bazos.cz/"><b>Ostatní</b></a>
+Inzeráty Celkem: 144120<br>
+Za 24 hodin: 3758<br><br>
+
+
+
+</div>
+</div></div>
+<br><br>
+
+
+
+<br><span class="mobilskryt">
+<iframe src="https://www.bazos.cz/reklamajasminka.php" style="border: 0px;width:100%; height:300px;overflow: hidden;"></iframe></span>
+</div><div class="maincontent">
+
+
+<div class="listainzerat inzeratyflex">
+<div class="inzeratynadpis"><img src="https://www.bazos.cz/obrazky/list.gif" width="18" height="16" alt="List inzerátů" class=gallerylista> <a href="/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1&gal=g" rel="nofollow"><img src="https://www.bazos.cz/obrazky/gallery.gif" width="18" height="16" alt="Galerie" class=gallerylist></a> Zobrazeno 1-20 inzerátů z 53</div>
+<div class="inzeratycena"><b><a href="/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=2" rel="nofollow">Cena</a></b></div>
+<div class="inzeratylok">Lokalita</div>
+<div class="inzeratyview"><a href="/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=3" rel="nofollow">Zobrazeno</a></div>
+</div><button type="button" onclick="odeslatrequest('/agent.php?teloverit=');overlay();">Nové inzeráty e-mailem</button>
+	<div id="overlay">
+     <div></div>
+</div>
+
+<div id="container_one"></div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/162463019/koupim-dily-mazda-mx5-nbfl.php"><img src="https://www.bazos.cz/img/1t/019/162463019.jpg" class="obrazek" alt="Koupím: Díly Mazda MX5 NBFL" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/162463019/koupim-dily-mazda-mx5-nbfl.php">Koupím: Díly Mazda MX5 NBFL</a></h2><span class=velikost10> - [26.12. 2022]</span><br>
+<div class=popis>Koupím:
+- Nárazník NBFL
+- Světla NBFL 
+- Blatníky
+- Zadní nárazník
+
+Preferuji ve stříbrné barvě, ale beru co nabídnete.</div><br><br>
+</div>
+<div class="inzeratycena"><b>  10 000 Kč</b></div>
+<div class="inzeratylok">Brno<br>612 00</div>
+<div class="inzeratyview">96 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=162463019&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=162463019&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=1794018&idphone=146869&jmeno=L" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/162463019.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/160860221/mazda-mx5-nd-rf.php"><img src="https://www.bazos.cz/img/1t/221/160860221.jpg?t=1673128927" class="obrazek" alt="Mazda MX5 (ND) RF" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/160860221/mazda-mx5-nd-rf.php">Mazda MX5 (ND) RF</a></h2><span class=velikost10> - <span title="TOP 1x Platí do 27.11. 2022" class="ztop">TOP</span> - [27.11. 2022]</span><br>
+<div class=popis>Díly <b>mazda</b> <b>mx5</b> pneumatiky zimní, přední světla, nárazník zadní...</div><br><br>
+</div>
+<div class="inzeratycena"><b>  10 000 Kč</b></div>
+<div class="inzeratylok">Hradec Králové<br>500 03</div>
+<div class="inzeratyview">242 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=160860221&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=160860221&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=4539614&idphone=97758&jmeno=PM" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/160860221.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/162188973/mazda-mx5.php"><img src="https://www.bazos.cz/img/1t/973/162188973.jpg" class="obrazek" alt="Mazda mx5" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/162188973/mazda-mx5.php">Mazda mx5</a></h2><span class=velikost10> - [18.12. 2022]</span><br>
+<div class=popis>Prodam ALU kola 215/40/17 5*14/3</div><br><br>
+</div>
+<div class="inzeratycena"><b>  10 999 Kč</b></div>
+<div class="inzeratylok">Louny<br>439 75</div>
+<div class="inzeratyview">117 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=162188973&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=162188973&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=1654813&idphone=279324&jmeno=Patrik" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/162188973.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/161247005/15-mazda-enkei-federal-semislick.php"><img src="https://www.bazos.cz/img/1t/005/161247005.jpg?t=1669711720" class="obrazek" alt="15&quot; Mazda ENKEI + Federal semislick" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/161247005/15-mazda-enkei-federal-semislick.php">15&quot; Mazda ENKEI + Federal semislick</a></h2><span class=velikost10> - [27.11. 2022]</span><br>
+<div class=popis>Prodám kola na Mazdu <b>mx5</b>, originál Enkei.
+4x100 ET40
+Pneu 195/50 R15 82W semislick
+Federal FZ-201 Treadwear 100 dot 2019
+gumy mají ještě dost masa, drží neskutečně </div><br><br>
+</div>
+<div class="inzeratycena"><b>  12 000 Kč</b></div>
+<div class="inzeratylok">Příbram<br>261 01</div>
+<div class="inzeratyview">440 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=161247005&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=161247005&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=57325&idphone=257727&jmeno=Radek" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/161247005.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/160916087/vinylovamoherova-strecha-mazda-mx-5-nanb.php"><img src="https://www.bazos.cz/img/1t/087/160916087.jpg?t=1671388979" class="obrazek" alt="Vinylová střecha Mazda MX-5 NA/NB" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/160916087/vinylovamoherova-strecha-mazda-mx-5-nanb.php">Vinylová střecha Mazda MX-5 NA/NB</a></h2><span class=velikost10> - [21.11. 2022]</span><br>
+<div class=popis>Prodám novou střechu na <b>mazda</b> <b>mx5</b> MX 5 NA a NB. Součástí je návod k montáži.
+
+Vinylová střecha s odepínací slídou 12.000,-</div><br><br>
+</div>
+<div class="inzeratycena"><b>  12 000 Kč</b></div>
+<div class="inzeratylok">Praha - východ<br>250 01</div>
+<div class="inzeratyview">482 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=160916087&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=160916087&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=1876302&idphone=1616716&jmeno=St%C5%99echa" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/160916087.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/160785164/mazda-mx-5-podlahovy-koberec.php"><img src="https://www.bazos.cz/img/1t/164/160785164.jpg" class="obrazek" alt="MAZDA MX-5 Podlahový koberec" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/160785164/mazda-mx-5-podlahovy-koberec.php">MAZDA MX-5 Podlahový koberec</a></h2><span class=velikost10> - [18.11. 2022]</span><br>
+<div class=popis>Podlahový koberec pro Mazdu <b>mx5</b>
+
+Tato sada obsahuje
+- Podlahový
+koberec - Zadní dělící koberec (za opěradla sedadel)
+- Koberec na zadní polici
+
+Barva: černá
+
+Koberec je nový.
+Možnost pro modely NA i NB
+
+Více dílů najdete na VESTORE
+</div><br><br>
+</div>
+<div class="inzeratycena"><b>  12 200 Kč</b></div>
+<div class="inzeratylok">Ústí nad Orlicí<br>565 01</div>
+<div class="inzeratyview">130 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=160785164&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=160785164&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=128286&idphone=109265&jmeno=VESTORE" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/160785164.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/162046762/mazda-mx5-16.php"><img src="https://www.bazos.cz/img/1t/762/162046762.jpg" class="obrazek" alt="Mazda mx5 1.6" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/162046762/mazda-mx5-16.php">Mazda mx5 1.6</a></h2><span class=velikost10> - [15.12. 2022]</span><br>
+<div class=popis>Nbfl 1.6 na díly..na prodej vše !!!
+Prodáno : 
+Střecha 
+Přední kapota
+Přední lampy 
+Přední vyztuha
+Přední naraznik 
+Panty přední kapoty 
+Přední podbehy
+Stylebar + clona 
+Sametky a těsnění kolem okna 
+Levé zadni světlo</div><br><br>
+</div>
+<div class="inzeratycena"><b>  12 345 Kč</b></div>
+<div class="inzeratylok">Frýdek - Místek<br>739 61</div>
+<div class="inzeratyview">500 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=162046762&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=162046762&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=131274&idphone=119136&jmeno=SweJpn" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/162046762.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/161032939/samosvor-torsen-t2-41-pro-mx-5-nanb.php"><img src="https://www.bazos.cz/img/1t/939/161032939.jpg?t=1672667683" class="obrazek" alt="Samosvor Torsen T2 4.1 pro MX-5 (NA/NB)" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/161032939/samosvor-torsen-t2-41-pro-mx-5-nanb.php">Samosvor Torsen T2 4.1 pro MX-5 (NA/NB)</a></h2><span class=velikost10> - [23.11. 2022]</span><br>
+<div class=popis>Na prodej samosvorny diferencial Torsen T2 4.1 pro vozy <b>mazda</b> <b>mx5</b> NA a NB, dobry stav, zaruka na odzkouseni. Osobni predani na trase Praha-Hradec Kr. 
+
+Cena 22 000,-
+
+Mam i druhy kus, rovnez Torsen T2 4.1, avsak bez drzaku (krytu). Pokud mate velky obal (prakticky vsechny 1.6 i 1.8 NA od r. 1994 ...</div><br><br>
+</div>
+<div class="inzeratycena"><b>  19 000 Kč</b></div>
+<div class="inzeratylok">Praha 3<br>130 00</div>
+<div class="inzeratyview">365 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=161032939&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=161032939&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=1130750&idphone=174768&jmeno=Filip" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/161032939.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/162504251/mazda-mx5-na-nb-nbfl-hardtop.php"><img src="https://www.bazos.cz/img/1t/251/162504251.jpg" class="obrazek" alt="Mazda mx5 na NB nbfl hardtop" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/162504251/mazda-mx5-na-nb-nbfl-hardtop.php">Mazda mx5 na NB nbfl hardtop</a></h2><span class=velikost10> - [27.12. 2022]</span><br>
+<div class=popis>Dobrý stav, s vyhřívání, origo lak 25e</div><br><br>
+</div>
+<div class="inzeratycena"><b>  20 000 Kč</b></div>
+<div class="inzeratylok">Jablonec nad Nisou<br>466 02</div>
+<div class="inzeratyview">451 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=162504251&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=162504251&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=66398&idphone=3145681&jmeno=m8" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/162504251.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/161048377/BBS-RG409-Forged-7J-R17-et55-5X1143-Mazda-MX5-Z-sport.php"><img src="https://www.bazos.cz/img/1t/377/161048377.jpg" class="obrazek" alt="BBS RG409 Forged 7J R17 et55 5X114,3 Mazda MX5 Z-sport" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/161048377/BBS-RG409-Forged-7J-R17-et55-5X1143-Mazda-MX5-Z-sport.php">BBS RG409 Forged 7J R17 et55 5X114,3 Mazda MX5 Z-sport</a></h2><span class=velikost10> - [23.11. 2022]</span><br>
+<div class=popis>predám neskutočne raritné kované limited edition disky (1/400 ks) pre mazdu <b>mx5</b> z-sport od firmy bbs v rozmeroch disku 7J R17 et50 a klasickej japan rozteči 5x114,3...disky sú po čiastkovej g.o.-na 100% zrovnané + novo vyleštené límce,NEVARENÉ!!!...mega ľahké kolesá...cena 25000,-czk/1000,-eur ..dob ...</div><br><br>
+</div>
+<div class="inzeratycena"><b>  23 000 Kč</b></div>
+<div class="inzeratylok">Slovensko<br>987 65</div>
+<div class="inzeratyview">439 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=161048377&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=161048377&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=1230712&idphone=19487&jmeno=igor" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/161048377.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/161257302/samosvor-na-bmw.php"><img src="https://www.bazos.cz/img/1t/302/161257302.jpg" class="obrazek" alt="Samosvor na BMW a jiné značky" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/161257302/samosvor-na-bmw.php">Samosvor na BMW a jiné značky</a></h2><span class=velikost10> - [28.11. 2022]</span><br>
+<div class=popis>Prodám nový samosvorný diferenciál na BMW 130i (E8X) a 330i E9x. Samosvor typu Torsen, minimální nároky na údržbu, zamyká progresivně, absolutně tichý chod, = skvělý na běžné ježdění a sportovní jízdu. 
+
+Mohu nabídnout špéru i na jiné Bmw motorizace (obecně na všechny benzínové/dieslové R4, R6-320 ...</div><br><br>
+</div>
+<div class="inzeratycena"><b>  23 990 Kč</b></div>
+<div class="inzeratylok">Praha - západ<br>252 10</div>
+<div class="inzeratyview">1249 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=161257302&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=161257302&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=103218&idphone=135785&jmeno=M%C3%A1ra" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/161257302.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/161703024/zaklad-kompresor-kitu-pro-mazda-mx5-nbnbfl-16.php"><img src="https://www.bazos.cz/img/1t/024/161703024.jpg?t=1672074696" class="obrazek" alt="Zaklad kompresor kitu pro Mazda Mx5 Nb/nbfl 1,6" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/161703024/zaklad-kompresor-kitu-pro-mazda-mx5-nbnbfl-16.php">Zaklad kompresor kitu pro Mazda Mx5 Nb/nbfl 1,6</a></h2><span class=velikost10> - [7.12. 2022]</span><br>
+<div class=popis>Prodam ze skladovych zasob, predvyrobene dily kompresoroveho kitu pro vuz <b>mazda</b> <b>mx5</b> NB/Nbfl 1,6 81kw/110k. Soucasti kompresor Eaton, drzak, velka hlinikova 6tidrazkova remenice (pro setup 180-230k podle remenice na kompresoru), remen a napinani, cili zaklad pro uchyceni na motor ve spravne pozici a  ...</div><br><br>
+</div>
+<div class="inzeratycena"><b>  24 900 Kč</b></div>
+<div class="inzeratylok">Kolín<br>281 06</div>
+<div class="inzeratyview">688 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=161703024&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=161703024&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=5150238&idphone=4063213&jmeno=JpnParts+Vitice" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/161703024.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/162619160/lotus-elise-s1-111s-raritni-sedacky.php"><img src="https://www.bazos.cz/img/1t/160/162619160.jpg" class="obrazek" alt="Lotus Elise S1 111s raritní sedačky" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/162619160/lotus-elise-s1-111s-raritni-sedacky.php">Lotus Elise S1 111s raritní sedačky</a></h2><span class=velikost10> - [30.12. 2022]</span><br>
+<div class=popis>Prodám sedačky z nejvyššího modelu Lotus Elise 111s. Korpus jako standardní Elise, ale sedačky jsou výrazně lépe vypolstrované především v oblasti sedáku plus mají zajímavější šití.
+
+ Vhodné pro <b>mazda</b> <b>mx5</b>. Třeba pro červené NAčko je to ,,must have,,.</div><br><br>
+</div>
+<div class="inzeratycena"><b>  28 000 Kč</b></div>
+<div class="inzeratylok">Jablonec nad Nisou<br>466 02</div>
+<div class="inzeratyview">150 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=162619160&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=162619160&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=66398&idphone=196858&jmeno=m8" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/162619160.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/162341619/mazda-mx-5-samosvorny-diferencial-torsen-41.php"><img src="https://www.bazos.cz/img/1t/619/162341619.jpg" class="obrazek" alt="Mazda MX-5 - samosvorný diferenciál Torsen 4,1" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/162341619/mazda-mx-5-samosvorny-diferencial-torsen-41.php">Mazda MX-5 - samosvorný diferenciál Torsen 4,1</a></h2><span class=velikost10> - [22.12. 2022]</span><br>
+<div class=popis>Nabízím samosvor na MX-5, poměr 4,1 tzn. ideální pro majitele 1,6tek nebo lidí co chtějí zkrátit převodový poměr na 1,8čce v kombinaci se 6q převodovkou. Diferenciál je v dobrém stavu, nehučí, olej neteče, svoří.
+
+Inzerát je platný do smazání.
+</div><br><br>
+</div>
+<div class="inzeratycena"><b>  28 000 Kč</b></div>
+<div class="inzeratylok">Tábor<br>391 65</div>
+<div class="inzeratyview">211 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=162341619&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=162341619&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=54491&idphone=19535&jmeno=MX-5+MX5+NA%2C+NB%2C+NBfl%2C+NC" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/162341619.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/161950738/mazda-mx-5.php"><img src="https://www.bazos.cz/img/1t/738/161950738.jpg" class="obrazek" alt="Mazda MX-5" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/161950738/mazda-mx-5.php">Mazda MX-5</a></h2><span class=velikost10> - [12.12. 2022]</span><br>
+<div class=popis><b>mazda</b> <b>mx5</b> zimní kára na blbnutí nebo na náhradní dily
+1.6
+Rok 2003
+ALU kola zimní pneu
+Dálkový funkční centrál
+Střecha nic moc ale je funkční
+Zadní lemy na výměnu
+Zadní kapota k vozu jiná
+<b>mazda</b> je plně pojízdná
+Dovoz de
+Dokumenty k přihlášení</div><br><br>
+</div>
+<div class="inzeratycena"><b>  39 000 Kč</b></div>
+<div class="inzeratylok">Rokycany<br>337 01</div>
+<div class="inzeratyview">2411 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=161950738&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=161950738&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=6351301&idphone=4007059&jmeno=Mazdar" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/161950738.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/160979410/sportovni-podvozek-intrax-pro-mazdu-mx-5-nd.php"><img src="https://www.bazos.cz/img/1t/410/160979410.jpg" class="obrazek" alt="Sportovní podvozek Intrax pro Mazda MX-5 ND" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/160979410/sportovni-podvozek-intrax-pro-mazdu-mx-5-nd.php">Sportovní podvozek Intrax pro Mazda MX-5 ND</a></h2><span class=velikost10> - [22.11. 2022]</span><br>
+<div class=popis>Prodám špičkový sportovní podvozek Intrax RSA pro Mazdu MX-5 ND. Postaven na zakázku na okresku a okruh. Skvělý univerzální podvozek.  Nájezd 10k, tlumiče jsou v pořádku a plně funkční.
+
+Nastavitelná výška a tuhost (1 Way, nastavení roztažení a stlačení tlumiče jedním otočením, 40 kliků), monotube ...</div><br><br>
+</div>
+<div class="inzeratycena"><b>  39 000 Kč</b></div>
+<div class="inzeratylok">Praha - západ<br>252 10</div>
+<div class="inzeratyview">289 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=160979410&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=160979410&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=103218&idphone=135785&jmeno=M%C3%A1ra" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/160979410.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/161499414/mazda-cx5-ii-kompletni-motor-pex.php"><img src="https://www.bazos.cz/img/1t/414/161499414.jpg" class="obrazek" alt="MAZDA CX5 II kompletni motor PEX" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/161499414/mazda-cx5-ii-kompletni-motor-pex.php">MAZDA CX5 II kompletni motor PEX</a></h2><span class=velikost10> - [3.12. 2022]</span><br>
+<div class=popis>motor je kompletni plne funcni
+prosim pouze volejte
+mohu predat na trase Liberec Praha Most Usti nad Labem
+CX7
+<b>mazda</b> 3
+33.000km
+<b>mx5</b></div><br><br>
+</div>
+<div class="inzeratycena"><b>  40 000 Kč</b></div>
+<div class="inzeratylok">Děčín<br>405 02</div>
+<div class="inzeratyview">248 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=161499414&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=161499414&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=6353823&idphone=4009963&jmeno=JIRKA" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/161499414.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/162077531/mazda-mx-5.php"><img src="https://www.bazos.cz/img/1t/531/162077531.jpg" class="obrazek" alt="Mazda MX-5" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/162077531/mazda-mx-5.php">Mazda MX-5</a></h2><span class=velikost10> - [15.12. 2022]</span><br>
+<div class=popis><b>mazda</b> <b>mx5</b>
+Rok 2000
+ALU kola 15 zimní pneu
+Modrá střecha vinil
+Pěkný lak
+El okna
+Servo
+Rádio na CD
+Jede pěkně </div><br><br>
+</div>
+<div class="inzeratycena"><b>  60 000 Kč</b></div>
+<div class="inzeratylok">Rokycany<br>337 01</div>
+<div class="inzeratyview">2184 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=162077531&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=162077531&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=6351301&idphone=4007059&jmeno=Mazdar" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/162077531.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/163150308/opel-tigra-twin-top-14i-16v-x-c-roadster-cabrio-2005-top.php"><img src="https://www.bazos.cz/img/1t/308/163150308.jpg" class="obrazek" alt="Opel Tigra Twin Top 1.4i 16v  x-c roadster cabrio 2005 TOP" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/163150308/opel-tigra-twin-top-14i-16v-x-c-roadster-cabrio-2005-top.php">Opel Tigra Twin Top 1.4i 16v  x-c roadster cabrio 2005 TOP</a></h2><span class=velikost10> - [12.1. 2023]</span><br>
+<div class=popis>Prodám opel tigra twin top 1,4i 16v 66kw. Kabriolet s el. ovládanou pevnou střechou (hardtop).
+Vhodné pro celoroční provoz.
+Bezproblémové a udržované vozidlo. Levné pov.ručení.
+Bez kosmetických vad a koroze.
+Rok výroby 2005. V v Čr 1.majitel.
+2x klíč.
+Servisní kniha.
+Stk do 6.2024. Dálniční z ...</div><br><br>
+</div>
+<div class="inzeratycena"><b>  65 000 Kč</b></div>
+<div class="inzeratylok">Litoměřice<br>412 01</div>
+<div class="inzeratyview">225 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=163150308&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=163150308&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=5859295&idphone=1497932&jmeno=DK" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/163150308.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+
+<div class="inzeraty inzeratyflex">
+<div class="inzeratynadpis"><a href="https://auto.bazos.cz/inzerat/161950649/mazda-mx-5.php"><img src="https://www.bazos.cz/img/1t/649/161950649.jpg" class="obrazek" alt="Mazda MX-5" width="140" height="105"></a>
+<h2 class=nadpis><a href="https://auto.bazos.cz/inzerat/161950649/mazda-mx-5.php">Mazda MX-5</a></h2><span class=velikost10> - [12.12. 2022]</span><br>
+<div class=popis><b>mazda</b> <b>mx5</b>
+1.6
+Rok 2000
+ALU kola 15
+Střecha funkční
+Interiér velmi slušný
+Vše funkční
+El okna
+Servo</div><br><br>
+</div>
+<div class="inzeratycena"><b>  65 000 Kč</b></div>
+<div class="inzeratylok">Rokycany<br>337 01</div>
+<div class="inzeratyview">1781 x</div>
+<div class="inzeratyakce">
+<a href="https://www.bazos.cz/report.php?idad=161950649&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=161950649&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=6351301&idphone=4007059&jmeno=Mazdar" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/161950649.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
+</div>
+</div>
+<div id="container_two"></div><br>
+<br><div class="strankovani">Stránka: <b><span class=cisla>1</span></b> <a href="search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1&crz=20" rel="nofollow">2</a> <a href="search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1&crz=40" rel="nofollow">3</a> <a href="search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1&crz=20" rel="nofollow"><b>Další</b></a></div><br>
+
+</div></div><script type="text/javascript" charset="utf-8">
+var pageOptions = {
+  'pubId': 'pub-3645948300403337',
+  'query' : 'mazda mx5',
+  'channel': '4719857758',
+  'linkTarget' : '_blank',
+  'styleId' : '6171314811',  'hl': 'cs'
+};
+
+
+var adblock1 = {
+  'container': 'container_one',
+  'width': 'auto',
+  'maxTop' : 2
+};
+
+var adblock2 = {
+  'container': 'container_two',
+  'width': 'auto',
+  'number' : 2
+};
+
+_googCsa('ads', pageOptions, adblock2);</script>
+<br>
+
+&copy;2023 Bazoš -  <b>Inzerce, Bazar</b><br>
+<a href="https://www.bazos.cz/napoveda.php">Nápověda</a>, <a href="https://www.bazos.cz/dotazy.php">Dotazy</a>, <a href="https://www.bazos.cz/hodnoceni.php">Hodnocení</a>, <a href="https://www.bazos.cz/kontakt.php">Kontakt</a>, <a href="https://www.bazos.cz/reklama.php">Reklama</a>, <a href="https://www.bazos.cz/podminky.php">Podmínky</a>, <a href="https://www.bazos.cz/ochrana-udaju.php">Ochrana údajů</a>, <a href="https://www.bazos.cz/rss.php?humkreis=25&hledat=mazda+mx5&cenaod=10000">RSS</a>, <a href="/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1&vkm=m" rel="nofollow">Mobilní verze</a><br>
+Inzeráty celkem:<b>
+1494831</b>, inzerce za 24 hodin: <b>55292</b><br><br>
+<a href="https://www.bazos.cz/mapa-kategorie.php">Mapa kategorií</a>, <a href="https://www.bazos.cz/mapa-search.php">Nejvyhledávanější výrazy</a>, Tmavý motiv: <a href="/?darkmode=1">Vypnuto</a><br>
+Země: <a href="https://www.bazos.cz">Česká republika</a>, <a href="https://www.bazos.sk">Slovensko</a>, <a href="https://www.bazos.pl">Polsko</a>, <a href="https://www.bazos.at">Rakousko</a>
+<br>
+<br>
+</div>
+
+<!-- (C)2000-2015 Gemius SA - gemiusAudience / bazos.cz / Hlavni strana vse -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = '0nfqxqMuGyaPC_raavXXZLcdHWwkWG7c7kBlmwnGKxv.P7';
+// lines below shouldn't be edited
+function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+gt.setAttribute('defer','defer'); gt.src=l+'://spir.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+//--><!]]>
+</script>
+<script>
+const cyrb53 = function(str, seed = 0) {
+   let h1 = 0xdeadbeef ^ seed,
+      h2 = 0x41c6ce57 ^ seed;
+   for (let i = 0, ch; i < str.length; i++) {
+      ch = str.charCodeAt(i);
+      h1 = Math.imul(h1 ^ ch, 2654435761);
+      h2 = Math.imul(h2 ^ ch, 1597334677);
+   }
+   h1 = Math.imul(h1 ^ h1 >>> 16, 2246822507) ^ Math.imul(h2 ^ h2 >>> 13, 3266489909);
+   h2 = Math.imul(h2 ^ h2 >>> 16, 2246822507) ^ Math.imul(h1 ^ h1 >>> 13, 3266489909);
+   return 4294967296 * (2097151 & h2) + (h1 >>> 0);
+};
+
+let clientIP = "213.180.63.174";
+let validityInterval = Math.round (new Date() / 1000 / 3600 / 24 / 4);
+let clientIDSource = clientIP + ";" + window.location.host + ";" + navigator.userAgent + ";" + navigator.language + ";" + validityInterval;
+let clientIDHashed = cyrb53(clientIDSource).toString(16);
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58407-2', {
+   'storage': 'none',
+   'clientId': clientIDHashed
+});
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
+</body>
+</html>
