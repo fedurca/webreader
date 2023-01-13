@@ -1,14 +1,307 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+<title>Mazda mx5 bazar - Bazos.cz</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Bezplatná inzerce na internetu - vyhledávání inzerátů na Bazoš.cz.">
+<meta name="google-play-app" content="app-id=cz.ackee.bazos">
+<meta name="apple-itunes-app" content="app-id=1195042966">
+<meta property="fb:admins" content="1055875657">
+<meta property="og:image" content="https://www.bazos.cz/obrazky/bazoslogoface.png">
+<meta name="ROBOTS" content="NOINDEX">
+<link rel="stylesheet" href="https://www.bazos.cz/bazos61s.css" type="text/css"><link rel="preload" as="image" href="https://www.bazos.cz/obrazky/bazos.svg">
+<link rel="shortcut icon" HREF="https://www.bazos.cz/favicon.ico">
+<link rel="icon" sizes="192x192" href="https://www.bazos.cz/obrazky/icon-192x192.png">
+<link rel="apple-touch-icon" href="https://www.bazos.cz/apple-touch-icon.png">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.bazos.cz/search.xml" title="Bazoš.cz">
+<link rel="alternate" type="application/rss+xml" title="Bazos.cz - RSS" href="https://www.bazos.cz/rss.php?humkreis=25&hledat=mazda+mx5&cenaod=10000">
+<script async="async" src="https://www.google.com/adsense/search/ads.js"></script>
+<script type="text/javascript" charset="utf-8">
+(function(g,o){g[o]=g[o]||function(){(g[o]['q']=g[o]['q']||[]).push(
+  arguments)},g[o]['t']=1*new Date})(window,'_googCsa');
+</script><script>
+var xhr = new XMLHttpRequest();
+var naseptavac_value = '';
+function naseptavac(value) {
+  if (value=='')  {
+  	naseptavac_value = '';
+  	document.getElementById('vysledek').innerHTML='';
+  	}
+else {
+	if (naseptavac_value == value) {
+		return false;
+	}
+	naseptavac_value = value;
+	setTimeout(function () {
+		if (naseptavac_value != value) {
+			return false;
+		}
+		xhr.onreadystatechange = function() {
+ 		 if (this.readyState == 4 && naseptavac_value == value){
+				document.getElementById('vysledek').innerHTML = this.responseText;
+			}
+ 		 };
+		xhr.open('GET', '/suggest.php?rubnas=HP&qnas='+encodeURIComponent(naseptavac_value));
+		xhr.send();
+	}, 250);
+}
+}
+
+var naseptavacpsc_value = '';
+function naseptavacpsc(value) {
+  if (value=='')  {
+  	naseptavacpsc_value = '';
+  	document.getElementById('vysledekpsc').innerHTML='<table cellpadding=\"3\" cellspacing=\"0\" class=\"tablenaspsc\"><tr><td class=\"act\" onclick=\"getLocation();\"><b>Inzeráty v okolí</b></td></tr></table>';
+  	}
+else {
+	if (naseptavacpsc_value == value) {
+		return false;
+	}
+	naseptavacpsc_value = value;
+	setTimeout(function () {
+		if (naseptavacpsc_value != value) {
+			return false;
+		}
+		xhr.onreadystatechange = function() {
+ 		 if (this.readyState == 4 && naseptavacpsc_value == value){
+				document.getElementById('vysledekpsc').innerHTML = this.responseText;
+			}
+ 		 };
+		xhr.open('GET', '/suggestpsc.php?qnaspsc='+encodeURIComponent(naseptavacpsc_value));
+		xhr.send();
+	}, 250);
+}
+}
+
+function getLocation() {
+if (navigator.geolocation) {navigator.geolocation.getCurrentPosition(showPosition);}
+else {document.getElementById('hlokalita').value = '';}
+}
+function showPosition(position) {
+		xhr.onreadystatechange = function() {
+ 		 if (this.readyState == 4){
+				document.getElementById('hlokalita').value = this.responseText;
+				document.forms['formt'].submit();
+			}
+ 		 };
+		xhr.open('GET', '/zip.php?latitude='+encodeURIComponent(position.coords.latitude)+'&longitude='+encodeURIComponent(position.coords.longitude));
+		xhr.send();
+}
+
+var agent_value = '';
+function agentclick() {
+  if (document.getElementById('agentmail').value=='')  {
+  	document.getElementById("agentmail").focus();
+    return false;
+  	}
+else {
+agent_value = document.getElementById('agentmail').value;
+xhr.onreadystatechange = function() {
+  if (this.readyState == 4){
+				document.getElementById('overlay').innerHTML = this.responseText;
+			}
+  };
+xhr.open("GET", '/agent.php?hledat=mazda mx5&rubrikav=&hlokalita=&humkreis=25&cenaod=10000&cenado=&cat=&typ=&agentmail='+encodeURIComponent(agent_value));
+xhr.send();
+}
+}
+
+function odeslatrequest(value) {
+xhr.onreadystatechange = function() {
+  if (this.readyState == 4){
+				document.getElementById('overlay').innerHTML = this.responseText;
+			}
+  };
+xhr.open("GET", value);
+xhr.send();
+}
+function overlay() {
+	el = document.getElementById("overlay");
+	el.style.display = (el.style.display == "inline") ? "none" : "inline";
+}
+</script>
+<script src="https://www.bazos.cz/eucookiecz.js" async></script>
 </head>
 
 <body>
 
+<div class="sirka">
+
+
+<div class="listalogor">
+<div class="listalogol"><a href="https://www.bazos.cz/" title="Bazos.cz - Inzerce, bazar"><img src="https://www.bazos.cz/obrazky/bazos.svg" width="199" height="34" alt="Bazos.cz - Inzerce, inzeráty"></a></div>
+<div class="listalogom"> <img src="/ukflag.jpg" height="25px" width="38px"> <b>... inzerce pro každého</b></div>
+<div class="listalogop"><a href="https://www.bazos.cz/oblibene.php"><b>Oblíbené inzeráty</b></a> <a href="https://www.bazos.cz/moje-inzeraty.php"><b>Moje inzeráty</b></a> <a href="/pridat-inzerat.php"><b><span class=pridati>Přidat inzerát</span></b></a></div>
+</div>
+
+<form name="formt" id="formt" method=get action="/search.php">
+<div class="listah">
+<div class="rubriky">
+<b>
+Co: <span class=vysokoli><span id="vysledek"></span><input type="search" onkeyup="naseptavac(this.value);" id=hledat name=hledat size="17" maxlength="256" value="mazda mx5" autocomplete="off" title="Co? Vyhledávaný výraz" ></span>
+
+<select name="rubriky" onchange='this.form.submit();' title="Vyber rubriku">
+<option value="www" selected>Všechny rubriky</option>
+<option value="auto">Auto</option>
+<option value="deti">Děti</option>
+<option value="dum">Dům a zahrada</option>
+<option value="elektro">Elektro</option>
+<option value="foto">Foto</option>
+<option value="hudba">Hudba</option>
+<option value="knihy">Knihy</option>
+<option value="mobil">Mobily</option>
+<option value="motorky">Motorky</option>
+<option value="nabytek">Nábytek</option>
+<option value="obleceni">Oblečení</option>
+<option value="pc">PC</option>
+<option value="prace">Práce</option>
+<option value="reality">Reality</option>
+<option value="sluzby">Služby</option>
+<option value="sport">Sport</option>
+<option value="stroje">Stroje</option>
+<option value="vstupenky">Vstupenky</option>
+<option value="zvirata">Zvířata</option>
+<option value="ostatni">Ostatní</option>
+</select>
+
+Lokalita: <span class=vysokolipsc><span id="vysledekpsc"></span><input type="search" name="hlokalita" id="hlokalita" onkeyup="naseptavacpsc(this.value);" onclick="naseptavacpsc(this.value);" value="" size="4" maxlength="25" autocomplete="off" title="Kde? PSČ (místo)" style="-webkit-appearance: none;"></span>
+Okolí: <input name="humkreis" title="Okolí v km" value="25" size="3" style="width: 25px;"> km
+Cena od: <input name=cenaod title="Cena od Kč" maxlength="12" size="5" value="10000"> - do: <input name=cenado title="Cena do Kč" maxlength="12" size="5" value=""> Kč <input type="submit" name="Submit" value="Hledat">
+<input type="hidden" name="kitx" value="ano"></b>
+</div>
+</div>
+</form>
+<div class="drobky"><a href="https://www.bazos.cz/" title="Inzerce Bazoš">Hlavní stránka</a> > <b>Vyhledávání</b> > <h1 class="nadpiskategorie">mazda mx5</h1></div><br>
 
 
 
+<div class="flexmain"><div class="menuleft"><div class="nadpismenu">Inzerce</div>
+<div class="barvalmenu">
+<div class="barvaleva">
+<div align="center">
+
+<br>
+<a href="https://auto.bazos.cz/"><b>Auto</b></a>
+Inzeráty Celkem: 335535<br>
+Za 24 hodin: 17401<br><br>
+
+<br>
+<a href="https://deti.bazos.cz/"><b>Děti</b></a>
+Inzeráty Celkem: 205571<br>
+Za 24 hodin: 4559<br><br>
+
+<br>
+<a href="https://dum.bazos.cz/"><b>Dům a zahrada</b></a>
+Inzeráty Celkem: 94664<br>
+Za 24 hodin: 3262<br><br>
+
+<br>
+<a href="https://elektro.bazos.cz/"><b>Elektro</b></a>
+Inzeráty Celkem: 70732<br>
+Za 24 hodin: 2507<br><br>
+
+<br>
+<a href="https://foto.bazos.cz/"><b>Foto</b></a>
+Inzeráty Celkem: 11787<br>
+Za 24 hodin: 402<br><br>
+
+<br>
+<a href="https://hudba.bazos.cz/"><b>Hudba</b></a>
+Inzeráty Celkem: 17462<br>
+Za 24 hodin: 593<br><br>
+
+<br>
+<a href="https://knihy.bazos.cz/"><b>Knihy</b></a>
+Inzeráty Celkem: 49932<br>
+Za 24 hodin: 946<br><br>
+
+<br>
+<a href="https://mobil.bazos.cz/"><b>Mobily</b></a>
+Inzeráty Celkem: 24810<br>
+Za 24 hodin: 1374<br><br>
+
+<br>
+<a href="https://motorky.bazos.cz/"><b>Motorky</b></a>
+Inzeráty Celkem: 52926<br>
+Za 24 hodin: 1996<br><br>
+
+<br>
+<a href="https://nabytek.bazos.cz/"><b>Nábytek</b></a>
+Inzeráty Celkem: 63526<br>
+Za 24 hodin: 2261<br><br>
+
+<br>
+<a href="https://obleceni.bazos.cz/"><b>Oblečení</b></a>
+Inzeráty Celkem: 129672<br>
+Za 24 hodin: 3001<br><br>
+
+<br>
+<a href="https://pc.bazos.cz/"><b>PC</b></a>
+Inzeráty Celkem: 49100<br>
+Za 24 hodin: 2061<br><br>
+
+<br>
+<a href="https://prace.bazos.cz/"><b>Práce</b></a>
+Inzeráty Celkem: 5957<br>
+Za 24 hodin: 708<br><br>
+
+<br>
+<a href="https://reality.bazos.cz/"><b>Reality</b></a>
+Inzeráty Celkem: 41637<br>
+Za 24 hodin: 2306<br><br>
+
+<br>
+<a href="https://sluzby.bazos.cz/"><b>Služby</b></a>
+Inzeráty Celkem: 9951<br>
+Za 24 hodin: 771<br><br>
+
+<br>
+<a href="https://sport.bazos.cz/"><b>Sport</b></a>
+Inzeráty Celkem: 89781<br>
+Za 24 hodin: 2591<br><br>
+
+<br>
+<a href="https://stroje.bazos.cz/"><b>Stroje</b></a>
+Inzeráty Celkem: 55894<br>
+Za 24 hodin: 2677<br><br>
+
+<br>
+<a href="https://vstupenky.bazos.cz/"><b>Vstupenky</b></a>
+Inzeráty Celkem: 2284<br>
+Za 24 hodin: 100<br><br>
+
+<br>
+<a href="https://zvirata.bazos.cz/"><b>Zvířata</b></a>
+Inzeráty Celkem: 39490<br>
+Za 24 hodin: 2018<br><br>
+
+<br>
+<a href="https://ostatni.bazos.cz/"><b>Ostatní</b></a>
+Inzeráty Celkem: 144120<br>
+Za 24 hodin: 3758<br><br>
+
+
+
+</div>
+</div></div>
+<br><br>
+
+
+
+<br><span class="mobilskryt">
+<iframe src="https://www.bazos.cz/reklamajasminka.php" style="border: 0px;width:100%; height:300px;overflow: hidden;"></iframe></span>
+</div><div class="maincontent">
+
+
+<div class="listainzerat inzeratyflex">
+<div class="inzeratynadpis"><img src="https://www.bazos.cz/obrazky/list.gif" width="18" height="16" alt="List inzerátů" class=gallerylista> <a href="/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1&gal=g" rel="nofollow"><img src="https://www.bazos.cz/obrazky/gallery.gif" width="18" height="16" alt="Galerie" class=gallerylist></a> Zobrazeno 1-20 inzerátů z 53</div>
+<div class="inzeratycena"><b><a href="/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=2" rel="nofollow">Cena</a></b></div>
+<div class="inzeratylok">Lokalita</div>
+<div class="inzeratyview"><a href="/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=3" rel="nofollow">Zobrazeno</a></div>
+</div><button type="button" onclick="odeslatrequest('/agent.php?teloverit=');overlay();">Nové inzeráty e-mailem</button>
+	<div id="overlay">
+     <div></div>
+</div>
 
 <div id="container_one"></div>
 
@@ -359,6 +652,85 @@ Servo</div><br><br>
 <a href="https://www.bazos.cz/report.php?idad=161950649&report=1" class="akce" rel="nofollow">Označit špatný inzerát</a> <a href="https://www.bazos.cz/report.php?idad=161950649&report=2" class="akce" rel="nofollow">Chybnou kategorii</a> <a href="https://www.bazos.cz/hodnoceni.php?idmail=6351301&idphone=4007059&jmeno=Mazdar" class="akce" rel="nofollow">Ohodnotit uživatele</a> <a href="https://auto.bazos.cz/smazat/161950649.php" class="akce" rel="nofollow">Smazat/Upravit/Topovat</a>
 </div>
 </div>
+<div id="container_two"></div><br>
+<br><div class="strankovani">Stránka: <b><span class=cisla>1</span></b> <a href="search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1&crz=20" rel="nofollow">2</a> <a href="search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1&crz=40" rel="nofollow">3</a> <a href="search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1&crz=20" rel="nofollow"><b>Další</b></a></div><br>
 
+</div></div><script type="text/javascript" charset="utf-8">
+var pageOptions = {
+  'pubId': 'pub-3645948300403337',
+  'query' : 'mazda mx5',
+  'channel': '4719857758',
+  'linkTarget' : '_blank',
+  'styleId' : '6171314811',  'hl': 'cs'
+};
+
+
+var adblock1 = {
+  'container': 'container_one',
+  'width': 'auto',
+  'maxTop' : 2
+};
+
+var adblock2 = {
+  'container': 'container_two',
+  'width': 'auto',
+  'number' : 2
+};
+
+_googCsa('ads', pageOptions, adblock2);</script>
+<br>
+
+&copy;2023 Bazoš -  <b>Inzerce, Bazar</b><br>
+<a href="https://www.bazos.cz/napoveda.php">Nápověda</a>, <a href="https://www.bazos.cz/dotazy.php">Dotazy</a>, <a href="https://www.bazos.cz/hodnoceni.php">Hodnocení</a>, <a href="https://www.bazos.cz/kontakt.php">Kontakt</a>, <a href="https://www.bazos.cz/reklama.php">Reklama</a>, <a href="https://www.bazos.cz/podminky.php">Podmínky</a>, <a href="https://www.bazos.cz/ochrana-udaju.php">Ochrana údajů</a>, <a href="https://www.bazos.cz/rss.php?humkreis=25&hledat=mazda+mx5&cenaod=10000">RSS</a>, <a href="/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1&vkm=m" rel="nofollow">Mobilní verze</a><br>
+Inzeráty celkem:<b>
+1494831</b>, inzerce za 24 hodin: <b>55292</b><br><br>
+<a href="https://www.bazos.cz/mapa-kategorie.php">Mapa kategorií</a>, <a href="https://www.bazos.cz/mapa-search.php">Nejvyhledávanější výrazy</a>, Tmavý motiv: <a href="/?darkmode=1">Vypnuto</a><br>
+Země: <a href="https://www.bazos.cz">Česká republika</a>, <a href="https://www.bazos.sk">Slovensko</a>, <a href="https://www.bazos.pl">Polsko</a>, <a href="https://www.bazos.at">Rakousko</a>
+<br>
+<br>
+</div>
+
+<!-- (C)2000-2015 Gemius SA - gemiusAudience / bazos.cz / Hlavni strana vse -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = '0nfqxqMuGyaPC_raavXXZLcdHWwkWG7c7kBlmwnGKxv.P7';
+// lines below shouldn't be edited
+function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+gt.setAttribute('defer','defer'); gt.src=l+'://spir.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+//--><!]]>
+</script>
+<script>
+const cyrb53 = function(str, seed = 0) {
+   let h1 = 0xdeadbeef ^ seed,
+      h2 = 0x41c6ce57 ^ seed;
+   for (let i = 0, ch; i < str.length; i++) {
+      ch = str.charCodeAt(i);
+      h1 = Math.imul(h1 ^ ch, 2654435761);
+      h2 = Math.imul(h2 ^ ch, 1597334677);
+   }
+   h1 = Math.imul(h1 ^ h1 >>> 16, 2246822507) ^ Math.imul(h2 ^ h2 >>> 13, 3266489909);
+   h2 = Math.imul(h2 ^ h2 >>> 16, 2246822507) ^ Math.imul(h1 ^ h1 >>> 13, 3266489909);
+   return 4294967296 * (2097151 & h2) + (h1 >>> 0);
+};
+
+let clientIP = "213.180.63.174";
+let validityInterval = Math.round (new Date() / 1000 / 3600 / 24 / 4);
+let clientIDSource = clientIP + ";" + window.location.host + ";" + navigator.userAgent + ";" + navigator.language + ";" + validityInterval;
+let clientIDHashed = cyrb53(clientIDSource).toString(16);
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-58407-2', {
+   'storage': 'none',
+   'clientId': clientIDHashed
+});
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
 </body>
 </html>
