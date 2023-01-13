@@ -17,14 +17,9 @@ with open("/home/fedurca/Documents/webreader/webreader/ad.html") as fp:
 #print(soup.)
 
 inzeraty = soup.find_all(class_="inzeraty inzeratyflex") 
-
 #nadpis = soup.find_all(class_="nadpis")
-
 #cena = soup.find_all(class_="inzeratycena")
-
 pozice = 0
-
-
 for tag in inzeraty:
     print(pozice)
     print(tag.get_text())
