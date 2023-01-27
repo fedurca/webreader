@@ -6,7 +6,7 @@ import sys
 #page = requests.get('https://www.bazos.cz/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1')
 # Create a BeautifulSoup object
 
-with open("/home/fedurca/Documents/webreader/webreader/ad.html") as fp:
+with open("ad.html") as fp:
     soup = BeautifulSoup(fp, 'html.parser')
 
 #soup = BeautifulSoup(page.text, 'html.parser')
