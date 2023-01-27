@@ -20,18 +20,28 @@ inzeraty = soup.find_all(class_="inzeraty inzeratyflex")
 #nadpis = soup.find_all(class_="nadpis")
 #cena = soup.find_all(class_="inzeratycena")
 pozice = 0
+inzerat = {}
+
 for tag in inzeraty:
-    print(pozice)
-    print(tag.get_text())
+    #print(pozice)
+    #print(tag.get_text())
     
-    nadpis = soup.find(class_='nadpis')
+    nadpis = tag.find(class_='nadpis')
     #print(type(nadpis))
     #<class 'bs4.element.Tag'>
     nadpis_plain = nadpis.get_text().strip()
     #print(nadpis_plain)
     
+    #print(nadpis_plain)
+    
     cena = soup.find(class_='inzeratycena')
     cena_plain = cena.get_text().strip()
+    
+    inzerat["id"] = pozice
+    inzerat["nadpis"] = nadpis_plain
+    inzerat["cena"] = cena_plain
+    
+    print(inzerat)
     #print(cena_plain)
     pozice += 1
 
