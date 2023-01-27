@@ -1,0 +1,63 @@
+0
+{'id': 0, 'nadpis': 'Koupím: Díly Mazda MX5 NBFL', 'cena': '10 000 Kč'}
+[{'id': 0, 'nadpis': 'Koupím: Díly Mazda MX5 NBFL', 'cena': '10 000 Kč'}]
+1
+{'id': 1, 'nadpis': 'Mazda MX5 (ND) RF', 'cena': '10 000 Kč'}
+[{'id': 1, 'nadpis': 'Mazda MX5 (ND) RF', 'cena': '10 000 Kč'}]
+2
+{'id': 2, 'nadpis': 'Mazda mx5', 'cena': '10 999 Kč'}
+[{'id': 2, 'nadpis': 'Mazda mx5', 'cena': '10 999 Kč'}]
+3
+{'id': 3, 'nadpis': '15" Mazda ENKEI + Federal semislick', 'cena': '12 000 Kč'}
+[{'id': 3, 'nadpis': '15" Mazda ENKEI + Federal semislick', 'cena': '12 000 Kč'}]
+4
+{'id': 4, 'nadpis': 'Vinylová střecha Mazda MX-5 NA/NB', 'cena': '12 000 Kč'}
+[{'id': 4, 'nadpis': 'Vinylová střecha Mazda MX-5 NA/NB', 'cena': '12 000 Kč'}]
+5
+{'id': 5, 'nadpis': 'MAZDA MX-5 Podlahový koberec', 'cena': '12 200 Kč'}
+[{'id': 5, 'nadpis': 'MAZDA MX-5 Podlahový koberec', 'cena': '12 200 Kč'}]
+6
+{'id': 6, 'nadpis': 'Mazda mx5 1.6', 'cena': '12 345 Kč'}
+[{'id': 6, 'nadpis': 'Mazda mx5 1.6', 'cena': '12 345 Kč'}]
+7
+{'id': 7, 'nadpis': 'Samosvor Torsen T2 4.1 pro MX-5 (NA/NB)', 'cena': '19 000 Kč'}
+[{'id': 7, 'nadpis': 'Samosvor Torsen T2 4.1 pro MX-5 (NA/NB)', 'cena': '19 000 Kč'}]
+8
+{'id': 8, 'nadpis': 'Mazda mx5 na NB nbfl hardtop', 'cena': '20 000 Kč'}
+[{'id': 8, 'nadpis': 'Mazda mx5 na NB nbfl hardtop', 'cena': '20 000 Kč'}]
+9
+{'id': 9, 'nadpis': 'BBS RG409 Forged 7J R17 et55 5X114,3 Mazda MX5 Z-sport', 'cena': '23 000 Kč'}
+[{'id': 9, 'nadpis': 'BBS RG409 Forged 7J R17 et55 5X114,3 Mazda MX5 Z-sport', 'cena': '23 000 Kč'}]
+10
+{'id': 10, 'nadpis': 'Samosvor na BMW a jiné značky', 'cena': '23 990 Kč'}
+[{'id': 10, 'nadpis': 'Samosvor na BMW a jiné značky', 'cena': '23 990 Kč'}]
+11
+{'id': 11, 'nadpis': 'Zaklad kompresor kitu pro Mazda Mx5 Nb/nbfl 1,6', 'cena': '24 900 Kč'}
+[{'id': 11, 'nadpis': 'Zaklad kompresor kitu pro Mazda Mx5 Nb/nbfl 1,6', 'cena': '24 900 Kč'}]
+12
+{'id': 12, 'nadpis': 'Lotus Elise S1 111s raritní sedačky', 'cena': '28 000 Kč'}
+[{'id': 12, 'nadpis': 'Lotus Elise S1 111s raritní sedačky', 'cena': '28 000 Kč'}]
+13
+{'id': 13, 'nadpis': 'Mazda MX-5 - samosvorný diferenciál Torsen 4,1', 'cena': '28 000 Kč'}
+[{'id': 13, 'nadpis': 'Mazda MX-5 - samosvorný diferenciál Torsen 4,1', 'cena': '28 000 Kč'}]
+14
+{'id': 14, 'nadpis': 'Mazda MX-5', 'cena': '39 000 Kč'}
+[{'id': 14, 'nadpis': 'Mazda MX-5', 'cena': '39 000 Kč'}]
+15
+{'id': 15, 'nadpis': 'Sportovní podvozek Intrax pro Mazda MX-5 ND', 'cena': '39 000 Kč'}
+[{'id': 15, 'nadpis': 'Sportovní podvozek Intrax pro Mazda MX-5 ND', 'cena': '39 000 Kč'}]
+16
+{'id': 16, 'nadpis': 'MAZDA CX5 II kompletni motor PEX', 'cena': '40 000 Kč'}
+[{'id': 16, 'nadpis': 'MAZDA CX5 II kompletni motor PEX', 'cena': '40 000 Kč'}]
+17
+{'id': 17, 'nadpis': 'Mazda MX-5', 'cena': '60 000 Kč'}
+[{'id': 17, 'nadpis': 'Mazda MX-5', 'cena': '60 000 Kč'}]
+18
+{'id': 18, 'nadpis': 'Opel Tigra Twin Top 1.4i 16v  x-c roadster cabrio 2005 TOP', 'cena': '65 000 Kč'}
+[{'id': 18, 'nadpis': 'Opel Tigra Twin Top 1.4i 16v  x-c roadster cabrio 2005 TOP', 'cena': '65 000 Kč'}]
+19
+{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}
+[{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}]
+
+
+{0: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 1: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 2: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 3: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 4: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 5: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 6: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 7: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 8: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 9: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 10: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 11: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 12: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 13: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 14: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 15: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 16: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 17: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 18: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}], 19: [{'id': 19, 'nadpis': 'Mazda MX-5', 'cena': '65 000 Kč'}]}
