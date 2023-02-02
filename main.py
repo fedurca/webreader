@@ -1,7 +1,7 @@
-
 import requests
 from bs4 import BeautifulSoup
 import sys 
+from copy import deepcopy
 
 #page = requests.get('https://www.bazos.cz/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1')
 # Create a BeautifulSoup object
