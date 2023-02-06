@@ -34,13 +34,13 @@ for tag in inzeraty:
     #print(nadpis_plain)
     cena = tag.find(class_='inzeratycena')
     cena_plain = cena.get_text().strip()
-    inzerat["id"] = pozice
-    inzerat["nadpis"] = nadpis_plain
-    inzerat["cena"] = cena_plain
-    data_inzeratu[pozice] = [inzerat]
-    print(pozice)
-    print(inzerat)
-    print(data_inzeratu[pozice])
+    inzerat["id"] = deepcopy(pozice)
+    inzerat["nadpis"] = deepcopy(nadpis_plain)
+    inzerat["cena"] = deepcopy(cena_plain)
+    data_inzeratu[pozice] = [deepcopy(inzerat)]
+    #print(pozice)
+    #print(inzerat)
+    #print(data_inzeratu[pozice])
     #print(cena_plain)
     pozice += 1
 
