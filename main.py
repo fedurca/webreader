@@ -3,15 +3,17 @@ from bs4 import BeautifulSoup
 import sys 
 from copy import deepcopy
 
-#page = requests.get('https://www.bazos.cz/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1')
-# Create a BeautifulSoup object
+read_from_web = 1
 
-with open("ad.html") as fp:
-    soup = BeautifulSoup(fp, 'html.parser')
+if (read_from_web):
+    page = requests.get('https://www.bazos.cz/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1')
+    # Create a BeautifulSoup object
+    soup = BeautifulSoup(page.text, 'html.parser')
+    # get the repo list
+else:
+    with open("ad.html") as fp:
+        soup = BeautifulSoup(fp, 'html.parser')
 
-#soup = BeautifulSoup(page.text, 'html.parser')
-# get the repo list
-# repo = soup.find(class_="repo-list")
 
 #print(type(soup))
 #print(soup.)
