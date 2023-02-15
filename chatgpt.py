@@ -37,5 +37,6 @@ for ad in ads:
     #break
 
 df = pd.DataFrame(data, columns=['Title', 'Price', 'Location', 'Text'])
+#df = pd.DataFrame(data, columns=['Title', 'Price', 'Location'])
 
 print(df)
