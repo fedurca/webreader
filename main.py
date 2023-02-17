@@ -49,7 +49,7 @@ for tag in inzeraty:
 print("")
 print("")
 
-print(data_inzeratu)
+print(data_inzeratu.get(8))
 
 #print(inzerat["id"])
 #print(inzerat["nadpis"])
