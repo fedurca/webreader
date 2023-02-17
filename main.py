@@ -49,7 +49,20 @@ for tag in inzeraty:
 print("")
 print("")
 
-print(data_inzeratu.get(8))
+#print(type(data_inzeratu.get(0)))
+#print(data_inzeratu.get(0)[0])
+#print(type(data_inzeratu.get(0)[0]))
+
+moje_kola = data_inzeratu.get(0)[0]
+print(type(moje_kola))
+print(moje_kola['cena'][:-3])
+
+#cena_kol=int(moje_kola['cena'][:-3])
+cena_kol=int(moje_kola['cena'][:-3].replace(" ", ""))
+
+print(type(cena_kol))
+print(cena_kol)
+
 
 #print(inzerat["id"])
 #print(inzerat["nadpis"])
