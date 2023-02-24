@@ -55,6 +55,10 @@ print("")
 
 moje_kola = data_inzeratu.get(0)[0]
 print(type(moje_kola))
+
+print(moje_kola['cena'])
+
+
 print(moje_kola['cena'][:-3])
 
 #cena_kol=int(moje_kola['cena'][:-3])
