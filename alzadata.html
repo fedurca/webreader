@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title> - Alza.cz bot validation</title>
+<link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="/css/site.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap&amp;subset=latin-ext" rel="stylesheet"/>
+<style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            font-family: 'Roboto', sans-serif;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            max-width: 550px;
+            margin: auto;
+        }
+
+        #image {
+            max-width: 250px;
+        }
+
+        #title {
+            letter-spacing: 0.15px;
+            margin: 30px 0 10px;
+            color: #525252;
+            text-align: center;
+        }
+
+        #text {
+            letter-spacing: 0.25px;
+            color: #A4A4A4;
+            text-align: center;
+            margin: 0 0 30px;
+        }
+
+        .footer {
+            letter-spacing: 0.25px;
+            color: #A4A4A4;
+            text-align: center;
+            margin: 20px 0px;
+            font-size: small;
+        }
+
+        #button {
+            display: inline-block;
+            background: #0094E7 0% 0% no-repeat padding-box;
+            box-shadow: 0px 1px 4px #00000026;
+            border-radius: 4px;
+            text-align: center;
+            letter-spacing: 0.75px;
+            color: #FFF;
+            padding: 12px 20px;
+            transition: background-color .2s ease, box-shadow .2s ease;
+            text-decoration: none;
+            margin: 20px 0;
+            width: 150px;
+        }
+
+            #button:hover {
+                background-color: #0383CB;
+                box-shadow: 0px 1px 4px #000000;
+            }
+    </style>
+</head>
+<body>
+<main class="pb-3" role="main">
+<script async="" defer="" src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script>
+<img alt="Robot" id="image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODkuOSAxNjcuMjYiPjxkZWZzLz48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImEiIGN4PSIuNSIgY3k9Ii41IiByPSIuNSIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0icmVkIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cGF0aCBmaWxsPSIjYTRhNGE0IiBkPSJNMTg5LjkgMTU2LjU2YzAgNC43NS00Mi41MSAxMC42LTk0Ljk1IDEwLjZTMCAxNjMuMzEgMCAxNTguNTZzNDIuNTEtOC42IDk0Ljk1LTguNiA5NC45NSAzLjg1IDk0Ljk1IDguNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNTM3IC0xMTY3LjEzKSI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExKSI+PHBhdGggZmlsbD0iI2UwZTBlMCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTY3NS43MiAxMzMzLjU4bC41OS01LjgyLTkuNS0yMi44Ni00OS43LS41NC0xMC40NyAyOS4yNGMxMC42LjM3IDIyLjIzLjggMzQuMjcuOCAxMi4zMyAwIDI0LS40NCAzNC44LS44MyIvPjxwYXRoIGZpbGw9IiNlOGU4ZTgiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE2MTMuOTUgMTMxMy4wOWMtMTQuNTYgNy40Ni0xMC4yNiAyLjI4LTE2LjQ1IDIwLjE0bDkuMTYuMzkgNy4yOS0yMC41M201Ni4yNiAwYzEwLjY2IDQuNzUgOS4wNSAyLjA1IDE1LjI0IDE5LjkxbC05LjguNjItNS40NC0yMC41MyIvPjxyZWN0IHdpZHRoPSIxMDQiIGhlaWdodD0iNzQiIGZpbGw9IiNlOGU4ZTgiIHJ4PSIzMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTU5MSAxMjMzKSIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMjIgMjUpIj48cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMjYiIGZpbGw9IiNmZmYiIHJ4PSIxMyIgdHJhbnNmb3JtPSJyb3RhdGUoLTE0IDU4NjEuNzcgLTY0MjQuNDMpIi8+PGNpcmNsZSBjeD0iMyIgY3k9IjMiIHI9IjMiIGZpbGw9IiNlOTI0MmUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3NDkgMTIzNCkiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTY0My4zMyAxMjQ0LjUyKSI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjI2IiBmaWxsPSIjZmZmIiByeD0iMTMiIHRyYW5zZm9ybT0icm90YXRlKC0xNjYgMTcuNTUgMTQuNTgpIi8+PGNpcmNsZSBjeD0iMyIgY3k9IjMiIHI9IjMiIGZpbGw9IiNjNmM2YzYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwLjY3IDE0LjQ4KSIvPjwvZz48cGF0aCBmaWxsPSIjZThlOGU4IiBkPSJNMTYzNSAxMjI0aDE2djEwaC0xNnoiLz48ZWxsaXBzZSBjeD0iMTciIGN5PSIxMS41IiBmaWxsPSIjZThlOGU4IiByeD0iMTciIHJ5PSIxMS41IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjI2IDEyMDcpIi8+PHJlY3Qgd2lkdGg9IjQiIGhlaWdodD0iMjUiIGZpbGw9IiNjNmM2YzYiIHJ4PSIyIiB0cmFuc2Zvcm09InJvdGF0ZSgtOTAgMTQ2My41IC0xNjgpIi8+PC9nPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEyIiBmaWxsPSJ1cmwoI2EpIiBvcGFjaXR5PSIuNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYwNyAxMjUwKSIvPjxwYXRoIGZpbGw9IiMwMDk0ZTciIGQ9Ik0xNjMzLjY4IDExNjcuMTNsLTQuODYgMTguMzFoNS42OGwtMy44NSAxNi43OCA2LjgzLTE3LjE4IDEuNS0zLjc0aC02LjYzeiIvPjwvZz48dGV4dCBmaWxsPSIjYTRhNGE0IiBmb250LWZhbWlseT0iUm9ib3RvLVJlZ3VsYXIsUm9ib3RvIiBmb250LXNpemU9IjgiIGxldHRlci1zcGFjaW5nPSItLjA1ZW0iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNyAxNTEuODcpIj48dHNwYW4geD0iLTkuNjUiIHk9IjAiPkEtODAwPC90c3Bhbj48L3RleHQ+PC9zdmc+"/>
+<h1 id="title">Prosím, ověřte se</h1>
+<p id="text">Prosím potvrďte, že jste člověk z masa a kostí. "PÍP PÍP TUDŮT, Děkujeme."</p>
+<div class="captcha-mid">
+<form action="" id="form" method="POST">
+<div class="g-recaptcha" data-callback="successCaptcha" data-sitekey="6Lcnh7QZAAAAALnwVTDDYkKRqfeApOwhdtlN4NYh"></div>
+<input id="recaptcha_response" name="recaptcha_response" type="hidden"/><br/>
+<a href="#" id="button">Potvrdit</a>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8KEHd5bAaNZMivc894v9Tp66UfveDH0DGKbbz9T8LzAMN-VGGzl75KSzbcnWkC47DYBGmFz2X-XLQXAv3XUd5VIO7mMFSKRgKlXVW3TnsSuPS-xCvyk4Xc2DgWnqbBAGzPaGe7nfkhEQe1FlrKD1p3Q"/></form>
+</div>
+<div class="footer">
+<p class="text-muted">You reached this page when trying to access <b>https://www.alza.cz/mobily/18843445.htm</b> from <b>213.180.63.174</b> on <b>3/3/2023</b>.</p>
+<p>Session: <b>f7409252-2544-4a31-8570-58425e4ef239</b></p>
+</div>
+<script type="text/javascript">
+    var title = document.getElementById('title');
+    var text = document.getElementById('text');
+    var button = document.getElementById('button');
+    var form = document.getElementById('form');
+
+    var tldToLang = {
+        'cz': 'cs',
+        'sk': 'sk',
+        'co.uk': 'en',
+        'com': 'en',
+        'de': 'de',
+        'at': 'de',
+        'hu': 'hu'
+    };
+
+    var translations = {
+        title: {
+            cs: 'Prosím, ověřte se',
+            sk: 'Prosím, overte sa',
+            en: 'Please verify yourself',
+            de: 'Prüfen Sie sich bitte',
+            hu: 'Kérem, igazolja magát',
+        },
+        text: {
+            cs: 'Prosím potvrďte, že jste člověk z masa a kostí. „PÍP PÍP TUDŮT, Děkujeme.“',
+            sk: 'Prosím potvrďte, že ste člověk z mäsa a kostí. „PÍP PÍP TUDUT, Ďakujeme“',
+            en: 'Please confirm you are a human being made of flesh and bone. "BEEP BEEP TADATAAH, thank you!"',
+            de: 'Bitte bestätigen Sie, dass Sie ein Mensch aus Fleisch und Knochen sind. „Piep Piep Tüdüüt, Danke.“',
+            hu: 'Kérem erősítse meg, hogy Ön hús-vér ember. „Bip-bip, tütűt, köszönöm!”',
+        },
+        button: {
+            cs: 'Potvrdit',
+            sk: 'Potvrdiť',
+            en: 'Confirm',
+            de: 'Bestätigen',
+            hu: 'Megerősítés',
+        }
+    };
+
+    var lang = navigator.language || navigator.userLanguage;
+    if (!lang) {
+        var requestedWeb = decodeURIComponent(location.search).match(/ssa=https?:\/\/www\.alza(shop)?\.([a-z.]+)/i);
+
+        if (requestedWeb.length == 3 && tldToLang.indexOf(requestedWeb[2])) {
+            lang = tldToLang[requestedWeb[2]];
+        } else {
+            lang = 'en';
+        }
+    }
+
+    lang = lang.substring(0, 2);
+    var langs = ['cs', 'sk', 'en', 'de', 'hu'];
+    if (langs.indexOf(lang) === -1)
+        lang = 'en';
+
+    title.innerHTML = translations.title[lang];
+    text.innerHTML = translations.text[lang];
+    button.innerHTML = translations.button[lang];
+
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : results[1].replace(/\+/g, ' ');
+    };
+
+    var clickEvent = function () {
+        var recaptchaResponse = grecaptcha.getResponse();
+        if (recaptchaResponse) {
+            window.location.href = "verify?" + "solution=" + recaptchaResponse + "&ssa=" + getUrlParameter('ssa');
+        }
+    };
+
+    var successCaptcha = function () {
+        button.removeEventListener('click', clickEvent, false);
+        button.addEventListener('click', clickEvent, false);
+    }
+</script>
+</main>
+<script crossorigin="anonymous" data-cf-beacon='{"rayId":"7a20645c2b22b359","token":"d35820ab4edb46d682570ebb9b7d3cf4","version":"2023.2.0","si":100}' defer="" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"></script>
+</body>
+</html>
+
+
+
+{}
