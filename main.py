@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import sys 
 from copy import deepcopy
 
-read_from_web = 1
+read_from_web = 0
 
 if (read_from_web):
     page = requests.get('https://www.bazos.cz/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1')
@@ -49,24 +49,25 @@ for tag in inzeraty:
 print("")
 print("")
 
-#print(type(data_inzeratu.get(0)))
-#print(data_inzeratu.get(0)[0])
-#print(type(data_inzeratu.get(0)[0]))
+print(data_inzeratu)
 
-moje_kola = data_inzeratu.get(0)[0]
-print(type(moje_kola))
+cena_vseho_dohromady = 0
+pocet_inzeratu = len(data_inzeratu)
+pocet_inzeratu = 20 
 
-print(moje_kola['cena'])
+i=0
+while(i<pocet_inzeratu):
+    cena_inzeratu = data_inzeratu.get(i)[0]
+    #print(type(cena_inzeratu))
+    #print(cena_inzeratu['cena'])
+    #print(cena_inzeratu['cena'][:-3])
+    cena_inzeratu=int(cena_inzeratu['cena'][:-3].replace(" ", ""))
+    print(cena_inzeratu)
+    cena_vseho_dohromady = cena_vseho_dohromady + cena_inzeratu
+    i = i+1
 
 
-print(moje_kola['cena'][:-3])
-
-#cena_kol=int(moje_kola['cena'][:-3])
-cena_kol=int(moje_kola['cena'][:-3].replace(" ", ""))
-
-print(type(cena_kol))
-print(cena_kol)
-
+print("cena za",pocet_inzeratu, "nejlevnějších věcí je",  cena_vseho_dohromady)
 
 #print(inzerat["id"])
 #print(inzerat["nadpis"])
