@@ -7,7 +7,19 @@ read_from_web = 1
 
 if (read_from_web):
     #page = requests.get('https://www.bazos.cz/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1')
-    page = requests.get('https://www.bazos.cz/search.php?hledat=manet+korado&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1')
+    url_base = 'https://www.bazos.cz/search.php?hledat='
+    url_item = 'manet+korado'
+    url_mid = '&hlokalita=&humkreis=25&cenaod='
+    url_price_from = 10000
+    url_between_prices = '&cenado='
+    url_price_to = 300000
+    url_end = '&order=1'
+    url_inzeratu = url_base + url_item + url_mid + str(url_price_from) + url_between_prices + str(url_price_to) + url_end
+    print(url_inzeratu)
+    print(type(url_inzeratu))
+    #sys.exit()
+    page = requests.get(url_inzeratu)
+    #page = requests.get('https://www.bazos.cz/search.php?hledat=manet+korado&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1')
     # Create a BeautifulSoup object
     soup = BeautifulSoup(page.text, 'html.parser')
     # get the repo list
