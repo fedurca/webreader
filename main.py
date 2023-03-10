@@ -3,10 +3,11 @@ from bs4 import BeautifulSoup
 import sys 
 from copy import deepcopy
 
-read_from_web = 0
+read_from_web = 1
 
 if (read_from_web):
-    page = requests.get('https://www.bazos.cz/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1')
+    #page = requests.get('https://www.bazos.cz/search.php?hledat=mazda+mx5&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1')
+    page = requests.get('https://www.bazos.cz/search.php?hledat=manet+korado&hlokalita=&humkreis=25&cenaod=10000&cenado=&order=1')
     # Create a BeautifulSoup object
     soup = BeautifulSoup(page.text, 'html.parser')
     # get the repo list
@@ -57,6 +58,7 @@ pocet_inzeratu = 20
 
 i=0
 while(i<pocet_inzeratu):
+    print(i)
     cena_inzeratu = data_inzeratu.get(i)[0]
     #print(type(cena_inzeratu))
     #print(cena_inzeratu['cena'])
