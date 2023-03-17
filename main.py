@@ -18,7 +18,7 @@ if(len(sys.argv)<=1):
     print("third argument=maximum price")
     print("")    
     print("example:")    
-    print(sys.argv[0] + " mazda+mx5 10000 60000")    
+    print(sys.argv[0] + " mazda+mx5 10000 600000")    
     sys.exit()
     
 

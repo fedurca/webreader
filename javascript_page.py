@@ -1,4 +1,5 @@
 
+#návod https://www.zenrows.com/blog/scraping-javascript-rendered-web-pages#why-is-scraping-javascript-rendered-web-pages-difficult
 #from https://gist.github.com/AnderRV/ce1e59d4f626dfab25873cc98dea1c48
 #pip install numpy selenium pandas webdriver_manager
 import time
@@ -71,14 +72,14 @@ chrome_path = ChromeDriverManager().install()
 chrome_service = Service(chrome_path)
 # pass the defined options and service objects to initialize the web driver
 driver = Chrome(options=options, service=chrome_service)
-driver.implicitly_wait(5)
+driver.implicitly_wait(10)
  
 #url = "https://www.instacart.com/store/sprouts/collections/bread?guest=True"
 url = "https://www.iwant.cz/iphone-c2372#s=pd"
 
  
 driver.get(url)
-time.sleep(1)
+time.sleep(10)
  
 content = find_element( "div[class*='productList-item'")
 #breads = content.find_elements(By.TAG_NAME, "productList-item-title")
