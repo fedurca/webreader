@@ -5,13 +5,21 @@ from bs4 import BeautifulSoup
 import sys, getopt 
 from copy import deepcopy
 
-read_from_web = 0
+read_from_web = 1
 
 print(sys.argv)
 print(type(sys.argv))
 print(len(sys.argv))
 
-sys.exit()
+if(len(sys.argv)<=1):
+    print("arguments item min max")
+    print("minumum 1 argument needed - item")
+    print("second argument=minimum price (optional)")
+    print("third argument=maximum price")
+    print("")    
+    print("example:")    
+    print(sys.argv[0] + " mazda+mx5 10000 60000")    
+    sys.exit()
     
 
 if (read_from_web):
@@ -19,9 +27,16 @@ if (read_from_web):
     url_base = 'https://www.bazos.cz/search.php?hledat='
     url_item = 'mazda+mx5'
     url_mid = '&hlokalita=&humkreis=25&cenaod='
-    url_price_from = 10000
+    if (int(sys.argv[2])):
+        url_price_from = int(sys.argv[2])
+    else:
+        url_price_from = 10000
     url_between_prices = '&cenado='
-    url_price_to = 300000
+    
+    if(int(sys.argv[3])):
+        url_price_to = int(sys.argv[3])
+    else:
+        url_price_to = 300000
     url_end = '&order=1'
     url_inzeratu = url_base + url_item + url_mid + str(url_price_from) + url_between_prices + str(url_price_to) + url_end
     print(url_inzeratu)
