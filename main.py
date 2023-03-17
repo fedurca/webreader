@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import sys, getopt 
 from copy import deepcopy
 
-read_from_web = 1
+read_from_web = 0
 
 print(sys.argv)
 print(type(sys.argv))
