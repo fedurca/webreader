@@ -78,12 +78,18 @@ url = "https://www.iwant.cz/iphone-c2372#s=pd"
 
  
 driver.get(url)
-time.sleep(10)
+time.sleep(1)
  
-content = driver.find_element(By.CSS_SELECTOR, "div[class*='ItemsGridWithPostAtcRecommendations'")
-breads = content.find_elements(By.TAG_NAME, "li")
+content = find_element( "div[class*='productList-item'")
+#breads = content.find_elements(By.TAG_NAME, "productList-item-title")
  
 data = []
+
+
+print(type(content))
+print(content)
+
+sys.exit()
  
 for bread in breads:
     extracted_data = extract_data(bread)
